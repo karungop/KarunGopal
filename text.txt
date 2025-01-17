@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Personal webpage of [Your Name]">
+    <title>Karun Gopal's Webpage</title>
+    <link rel="stylesheet" href="output.css"> <!-- Link to external CSS file if applicable -->
+</head>
+<body>
+
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#skills">Skills & Technologies</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#certifications">Certifications & Courses</a></li>
+            <li><a href="#resume">Resume/CV</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <!-- Header Section -->
+    <header>
+        <!--nav>
+            <ul>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        -->
+        <section id = "home">
+        <h1>Karun Gopal</h1>
+        </sectionid>
+        <p>Welcome to my personal website!</p>
+    </header>
+
+    <!-- About Me Section -->
+    <section id="about">
+        <h2>About Me</h2>
+        <img src="headshot.png" alt="[Your Name]" width="150"> <!-- Profile image -->
+        <p>
+            Hi, I'm Karun Gopal, an aspriring Software Developer based in Columbus, Ohio. I am a sophomore at The Ohio State University, majoring in Computer Science and Engineering, along with Mathematics. I’m focusing on artificial intelligence within computer science and pursuing Financial Mathematics. In my free time, I enjoy going to the gym and spending time with friends.
+        </p>
+    </section>
+
+    <section id="education">
+        <h2>Education</h2>
+
+        <!-- Bachelor's Degree -->
+        <div class="degree">
+            <h3>Bachelor of Science</h3>
+            <p><strong>Institution:</strong> The Ohio State University</p>
+            <p><strong>Duration:</strong> 2023 - 2027</p>
+            <p><strong>Major/Field of Study:</strong> Computer Science and Engineering and Mathematics</p>
+            <p><strong>GPA:</strong> 3.77</p>
+            <p><strong>Key Courses:</strong> Software Components, Discrete Mathematics, Data Structures and Algorithms, Linear Algebra</p>
+        </div>
+    </section>
+
+    <section id="skills">
+        <h2>Skills & Technologies</h2>
+        <h3>Languages</h3>
+        <ul>
+            <li>Python</li>
+            <li>Java</li>
+            <li>C</li>
+            <li>C++</li>
+            <li>SQL</li>
+            <li>HTML</li>
+            <li>JavaScript</li>
+            <!-- Add more as needed -->
+        </ul>
+
+        <h3>Technologies</h3>
+        <ul>
+            <li>Git</li>
+            <li>React JS</li>
+            <li>CSS</li>
+            <li>Beautiful Soup</li>
+            <li>Flask</li>
+        </ul>
+    </section>
+
+
+    <!-- Portfolio Section -->
+    <section id="projects">
+        <h2>Projects</h2>
+        <p>Check out some of my recent projects:</p>
+        <div class="portfolio-items">
+            <div class="portfolio-item">
+                <p>Project Description etc</p>
+                <ul>
+                    <li>Developed the frontend interface for the platform, ensuring a user-friendly design and seamless interaction</li>
+                    <li>Implemented the backend file upload system using Flask, enabling efficient and secure handling of uploaded</li>
+                    <li>Tools Used: React JS, Python, Flask, CSS, HTML, OpenAI’s API</li>
+                </ul>
+                <p>A brief description of the project and technologies used.</p>
+            </div>
+            <div class="portfolio-item">
+                <h3>BookWorm</h3>
+                <p>Project Description etc</p>
+                <ul>
+                    <li>Built an AI-powered website using Django to help teachers adapt news articles to students’ reading levels,
+                        enhancing accessibility and comprehension by using Beautiful Soup to web scrape relevant articles and
+                        integrating OpenAI’s API to rewrite content tailored to different reading abilities</li>
+                    <li>Tools Used: Python, OpenAI’s API, Beautiful Soup, Django</li>
+                </ul>
+            </div>
+            <div class="portfolio-item">
+                <h3>HomePage</h3>
+                
+                <p>A brief description of the project and technologies used.</p>
+            </div>
+            <!-- Add more portfolio items as needed -->
+        </div>
+    </section>
+
+    <section id="certifications">
+        <h2>Certifications & Courses</h2>
+        <ul>
+            <li>AWS Certified Cloud Practitioner</li>
+            <li>PCEP Entry Level Python Programmer</li>
+            <!-- Add more certifications as needed -->
+        </ul>
+    </section>
+
+    <section id="resume">
+        <h2>Resume/CV</h2>
+        <p>You can download my resume here: <a href="resume.pdf" download>Download my Resume</a></p>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>If you'd like to get in touch, feel free to reach out to me via the following channels:</p>
+        <ul>
+            <li>Email: <a href="karun.gopal@gmail.com">karun.gopal@gmail.com</a></li>
+            <li>LinkedIn: <a href="https://www.linkedin.com/in/karun-gopal/" target="_blank">https://www.linkedin.com/in/karun-gopal/</a></li>
+            <li>GitHub: <a href="https://github.com/karungop" target="_blank">https://github.com/karungop</a></li>
+        </ul>
+    </section>
+
+</body>
+</html>
