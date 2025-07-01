@@ -124,6 +124,10 @@ a:hover {
   text-align: center;
 }
 
+.center {
+  text-align: center;
+}
+
 /* About Section */
 .about-container {
   display: flex;
@@ -190,20 +194,20 @@ a:hover {
 .certifications {
   display: flex;
   justify-content: center;
-  gap: 2rem;
-  flex-wrap: wrap;
+  align-items: center;
+  gap: 3rem;
   margin-top: 2rem;
+  flex-wrap: wrap;
 }
 
-.cert img {
-  width: 80px;
-  height: 80px;
-  margin-bottom: 0.5rem;
-}
-
-.cert p {
-  font-weight: 500;
+.certifications .cert-item {
   text-align: center;
+}
+
+.certifications img {
+  width: 100px;
+  height: auto;
+  margin-top: 0.5rem;
 }
 
 /* Contact */
@@ -250,53 +254,3 @@ a:hover {
   0% { transform: translateY(20px); opacity: 0; }
   100% { transform: translateY(0); opacity: 1; }
 }
-
-  
-
-  .experience-item {
-  margin-bottom: 2.5rem;
-}
-
-.experience-item h3 {
-  font-size: 1.25rem;
-  font-weight: 600;
-  margin-bottom: 0.25rem;
-}
-
-.exp-dates {
-  font-size: 0.95rem;
-  color: #6b7280;
-  margin-bottom: 0.75rem;
-}
-
-.experience-item ul {
-  list-style-type: disc;
-  margin-left: 1.5rem;
-  color: #374151;
-  line-height: 1.6;
-}
-
-.experience-item {
-  margin-bottom: 2.5rem;
-}
-
-.experience-item h3 {
-  font-size: 1.25rem;
-  font-weight: 600;
-  margin-bottom: 0.25rem;
-}
-
-.exp-dates {
-  font-size: 0.95rem;
-  color: #6b7280;
-  margin-bottom: 0.75rem;
-}
-
-.experience-item ul {
-  list-style-type: disc;
-  margin-left: 1.5rem;
-  color: #374151;
-  line-height: 1.6;
-}
-
-

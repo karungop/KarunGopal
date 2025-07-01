@@ -2,21 +2,19 @@
 import "../styles/main.css";
 
 const Certifications = () => (
-    <section id="certifications">
-      <div className ="inline">
-      <h2 className="center">Certifications & Courses</h2>
-      <div className="skill-card">
-        <div className="center">
-          <strong>AWS Certified Cloud Practitioner</strong>
-          <img src="AWS.png" alt="AWS" />
-        </div>
-        <div className="center">
-          <strong>PCEP Entry Level Python Programmer</strong>
-          <img src="PCEP.png" alt="PCEP" />
-        </div>
+     <section id="certifications" className="section">
+    <h2 className="center-text">Certifications & Courses</h2>
+    <div className="certifications">
+      <div className="cert-item">
+        <p><strong>AWS Certified Cloud Practitioner</strong></p>
+        <img src="/AWS.png" alt="AWS Certification" />
       </div>
+      <div className="cert-item">
+        <p><strong>PCEP Entry Level Python Programmer</strong></p>
+        <img src="/PCEP.png" alt="PCEP Certification" />
       </div>
-    </section>
+    </div>
+  </section>
   );
   
   export default Certifications;
