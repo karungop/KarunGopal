@@ -8,6 +8,10 @@ import Projects from './components/projects';
 import Certifications from './components/certifications';
 import Resume from './components/resume';
 import Contact from './components/contact';
+import BackToTop from './components/backToTop';
+import "./styles/main.css";
+import Experiences from './components/experiences';
+
 
 function App() {
   return (
@@ -16,11 +20,13 @@ function App() {
       <Header />
       <About />
       <Education />
+      <Experiences/>
       <Skills />
       <Projects />
       <Certifications />
       <Resume />
       <Contact />
+      <BackToTop/>
     </div>
   );
 }

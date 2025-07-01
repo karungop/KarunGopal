@@ -1,14 +1,20 @@
 // src/components/About.jsx
+import "../styles/main.css";
+
 const About = () => (
     <section id="about">
       <h2 className="center">About Me</h2>
       <div className="card">
-        <img src="/images/headshot.png" alt="Karun Gopal" style={{ maxWidth: "200px", borderRadius: "50%", marginBottom: "1rem" }} />
+        <img src="headshot.png" alt="Karun Gopal" style={{ maxWidth: "200px", borderRadius: "50%", marginBottom: "1rem" }} />
         <p>
-          Hi, I'm Karun Gopal, an aspiring Software Developer based in Columbus, Ohio. I am a sophomore at The Ohio State University,
-          majoring in Computer Science and Engineering, along with Mathematics. I’m focusing on artificial intelligence within computer
-          science and pursuing Financial Mathematics. In my free time, I enjoy going to the gym and spending time with friends.
-        </p>
+  I'm a junior at The Ohio State University double majoring in Computer Science and Mathematics.
+  I'm currently a Software Engineering Intern at Principal Financial Group where I work on building scalable backend services.
+  I'm passionate about backend architecture, developer tools, and applied AI.
+</p>
+<p>
+  Outside of school, I build projects to deepen my understanding of systems and AI, and I love finding new ways to optimize my workflow and help others do the same.
+</p>
+
       </div>
     </section>
   );

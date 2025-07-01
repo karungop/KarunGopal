@@ -1,15 +1,16 @@
 // src/components/Resume.jsx
+import "../styles/main.css";
+
 const Resume = () => (
-    <section id="resume">
-      <h2 className="center">Resume/CV</h2>
-      <p className="center">
-        You can download my resume here:
-        {' '}
-        <a href="https://drive.google.com/file/d/1mUYsm65rovjsUHYXJEdcZnpcU0dTcOPH/view?usp=sharing" className="contact-list" download>
-          Download my Resume
-        </a>
-      </p>
-    </section>
+    <section id="resume" className="section">
+  <h2 className="center-text">Resume & Experience</h2>
+  <p className="center-text">
+    Interested in learning more about my experience? <br />
+    <a href="https://drive.google.com/..." download className="cta-button">
+      Download my Resume
+    </a> or feel free to <a href="https://linkedin.com/in/karun-gopal" target="_blank" rel="noopener noreferrer">connect with me on LinkedIn</a>.
+  </p>
+</section>
   );
   
   export default Resume;

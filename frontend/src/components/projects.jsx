@@ -1,61 +1,72 @@
 // src/components/Projects.jsx
+import "../styles/main.css";
+
 const Projects = () => {
-    const projectList = [
-      {
-        name: "Find Your Spot",
-        details: [
-          "Designed a RESTful API with Django to manage study spot data and implemented CRUD functionality.",
-          "Developed a full-stack web app using Django and React to help students find and share study spots.",
-          "Built a responsive React frontend for real-time search and filtering.",
-          "Tools Used: Django, React, Python, SQL, JavaScript, CSS"
-        ]
-      },
-      {
-        name: "Rate My Professor Sentiment Analysis",
-        details: [
-          "Built a sentiment analysis model using Rate My Professors data.",
-          "Analyzed key data points including Overall Quality, Difficulty, and Comments.",
-          "Hands-on experience with ML and predictive modeling.",
-          "Tools Used: Jupyter, Python, DistilBert, Pandas, PyTorch"
-        ]
-      },
-      {
-        name: "Advisor AI",
-        details: [
-          "AI chatbot for academic advising using OpenAI’s API.",
-          "Built frontend and backend file upload system with Flask.",
-          "Tools Used: React, Flask, Python, CSS, OpenAI"
-        ]
-      },
-      {
-        name: "BookWorm",
-        details: [
-          "AI-powered site for adapting news articles to reading levels.",
-          "Web scraped with Beautiful Soup, rewritten with OpenAI API.",
-          "Tools Used: Django, Python, Beautiful Soup, OpenAI"
-        ]
-      },
-      {
-        name: "HomePage",
-        details: [
-          "Personal site to showcase skills and projects.",
-          "Tools Used: HTML, Custom CSS"
-        ]
-      }
-    ];
-  
     return (
-      <section id="projects">
-        <h2 className="center">Projects</h2>
-        {projectList.map(({ name, details }) => (
-          <div className="card" key={name}>
-            <h3>{name}</h3>
-            <ul>
-              {details.map((item, idx) => <li key={idx}>{item}</li>)}
-            </ul>
-          </div>
-        ))}
-      </section>
+      <section id="projects" className="section">
+  <h2 className="center-text">Projects</h2>
+  <p className="center-text">Here are a few highlights of what I've built:</p>
+
+  <div className="projects-grid">
+
+    <div className="project-card">
+      <h3>Find Your Spot</h3>
+      <p>
+        Full-stack web platform for discovering campus study locations. I built a RESTful Django backend with complete CRUD functionality and developed a dynamic React frontend with real-time filtering.
+      </p>
+      <p><strong>Tech:</strong> Django, React, PostgreSQL, CSS</p>
+      <p>
+        <strong>GitHub:</strong> <a href="https://github.com/karungop/find-your-spot" target="_blank" rel="noopener noreferrer" className="cta-button">View Repository</a>
+      </p>
+    </div>
+
+    <div className="project-card">
+      <h3>Rate My Professor Sentiment Analysis</h3>
+      <p>
+        Designed a machine learning model to predict professor ratings based on review content and course difficulty metrics. Used DistilBERT to classify sentiment and Pandas to engineer features.
+      </p>
+      <p><strong>Tech:</strong> Python, Transformers, PyTorch, Pandas</p>
+      <p>
+        <strong>GitHub:</strong> <a href="https://github.com/karungop/rate-my-professor" target="_blank" rel="noopener noreferrer" className="cta-button">View Repository</a>
+      </p>
+    </div>
+
+    <div className="project-card">
+      <h3>Advisor AI</h3>
+      <p>
+        Built a chatbot tool that simulates academic advising conversations using the OpenAI API. I implemented secure file upload in Flask and crafted the user interface using React.
+      </p>
+      <p><strong>Tech:</strong> React, Flask, OpenAI API, CSS</p>
+      <p>
+        <strong>GitHub:</strong> <a href="https://github.com/karungop/advisor-ai" target="_blank" rel="noopener noreferrer" className="cta-button">View Repository</a>
+      </p>
+    </div>
+
+    <div className="project-card">
+      <h3>BookWorm</h3>
+      <p>
+        Created an educational tool for teachers to simplify news articles based on student reading levels. Scraped web content with Beautiful Soup and used the OpenAI API for text simplification.
+      </p>
+      <p><strong>Tech:</strong> Django, Beautiful Soup, OpenAI API, Python</p>
+      <p>
+        <strong>GitHub:</strong> <a href="https://github.com/karungop/bookworm" target="_blank" rel="noopener noreferrer" className="cta-button">View Repository</a>
+      </p>
+    </div>
+
+    <div className="project-card">
+      <h3>Homepage</h3>
+      <p>
+        This very site — a modern personal homepage that showcases my work, experience, and goals. Built from scratch with React, custom CSS, and a focus on simplicity and recruiter readability.
+      </p>
+      <p><strong>Tech:</strong> React, HTML, CSS</p>
+      <p>
+        <strong>GitHub:</strong> <a href="https://github.com/karungop/personal-homepage" target="_blank" rel="noopener noreferrer" className="cta-button">View Repository</a>
+      </p>
+    </div>
+
+  </div>
+</section>
+
     );
   };
   
