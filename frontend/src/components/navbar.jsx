@@ -9,19 +9,28 @@ const scrollToSection = (id) => {
 };
 
 const Navbar = () => {
-  const links = ["home", "about", "education","work experience", "skills", "projects", "certifications", "resume", "contact"];
+  // Correct order and IDs
+  const links = [
+    { label: "Home", id: "hero" },
+    { label: "Skills", id: "skills" },
+    { label: "Projects", id: "projects" },
+    { label: "Experience", id: "work experience" },
+    { label: "Education", id: "education" },
+    { label: "Certifications", id: "certifications" },
+    { label: "Contact", id: "contact" },
+  ];
 
   return (
     <nav className="navbar">
       <ul>
         {links.map((link) => (
-          <li key={link}>
+          <li key={link.id}>
             <button
-              onClick={() => scrollToSection(link)}
+              onClick={() => scrollToSection(link.id)}
               className="nav-link"
               style={{ background: "none", border: "none", cursor: "pointer" }}
             >
-              {link.charAt(0).toUpperCase() + link.slice(1)}
+              {link.label}
             </button>
           </li>
         ))}

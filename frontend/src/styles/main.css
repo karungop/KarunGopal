@@ -3,9 +3,10 @@
 /* General Reset and Base Styles */
 body {
   margin: 0;
-  font-family: 'Segoe UI', sans-serif;
-  background-color: #f8fafc;
-  color: #1f2937;
+  font-family: 'Segoe UI', 'Inter', 'Roboto', sans-serif;
+  background: linear-gradient(135deg, #444 0%, #111 100%);
+  color: #f3f3f3;
+  min-height: 100vh;
   scroll-behavior: smooth;
 }
 
@@ -13,31 +14,39 @@ section {
   padding: 4rem 1.5rem;
   max-width: 960px;
   margin: 0 auto;
-  border-bottom: 1px solid #e5e7eb;
+  border-bottom: none;
+  background: rgba(30, 30, 30, 0.7);
+  border-radius: 1.5rem;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.15);
+  backdrop-filter: blur(8px);
   animation: fadeIn 1s ease-out;
+  margin-bottom: 2rem;
 }
 
+/* Keep orange for highlights, buttons, and accents only */
 h1, h2, h3 {
-  color: #111827;
+  color: #ff6600;
+  letter-spacing: 0.5px;
 }
 
 a {
-  color: inherit;
+  color: #ff6600;
   text-decoration: none;
   transition: color 0.2s ease;
 }
 
 a:hover {
-  color: #2563eb;
+  color: #ffa040;
 }
 
 /* Navbar */
 .navbar {
-  background-color: #1e3a8a;
+  background: rgba(20, 20, 20, 0.95);
   position: sticky;
   top: 0;
   z-index: 1000;
-  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.12);
+  backdrop-filter: blur(6px);
 }
 
 .navbar ul {
@@ -49,9 +58,10 @@ a:hover {
 }
 
 .navbar .nav-link {
-  color: white;
-  font-weight: 500;
+  color: #ff6600;
+  font-weight: 600;
   position: relative;
+  letter-spacing: 0.5px;
 }
 
 .navbar .nav-link::after {
@@ -61,7 +71,7 @@ a:hover {
   left: 0;
   width: 0;
   height: 2px;
-  background: #93c5fd;
+  background: #ff6600;
   transition: width 0.3s;
 }
 
@@ -71,49 +81,59 @@ a:hover {
 
 /* Header */
 .header {
-  background: linear-gradient(135deg, #1e3a8a, #4f46e5);
-  color: white;
-  padding: 6rem 1rem;
+  background: linear-gradient(120deg, #ff6600 0%, #111111 100%);
+  color: #fff;
+  padding: 6rem 1rem 4rem 1rem;
   text-align: center;
+  border-radius: 0 0 2rem 2rem;
+  box-shadow: 0 4px 24px 0 rgba(31, 38, 135, 0.10);
 }
 
 .header-content h1 {
-  font-size: 2.75rem;
-  font-weight: 700;
+  font-size: 3rem;
+  font-weight: 800;
   margin-bottom: 1rem;
+  color: #fff;
 }
 
 .header-content .highlight {
-  color: #a5f3fc;
+  color: #ff6600;
 }
 
 .header-content .intro {
-  font-size: 1.25rem;
+  font-size: 1.35rem;
   margin-bottom: 2rem;
+  color: #f3f3f3;
 }
 
 .cta-button {
   display: inline-block;
-  background-color: #3b82f6;
-  color: white;
-  padding: 0.5rem 1rem;
-  border-radius: 0.375rem;
-  font-size: 0.875rem;
-  margin-top: 0.5rem;
-  transition: background 0.3s;
+  background: linear-gradient(90deg, #ff6600 60%, #ff9900 100%);
+  color: #fff;
+  padding: 0.7rem 1.5rem;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  margin-top: 1rem;
+  font-weight: 600;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+  transition: background 0.3s, transform 0.2s;
 }
 
 .cta-button:hover {
-  background-color: #2563eb;
+  background: linear-gradient(90deg, #ff9900 60%, #ff6600 100%);
+  transform: scale(1.05);
 }
 
-/* Section Styling */
+/* Section backgrounds remain dark for contrast */
 .section {
-  background: none;
-  margin-bottom: 0;
-  border-radius: 0;
-  box-shadow: none;
-  animation: slideUp 0.5s ease-out;
+  background: rgba(30, 30, 30, 0.7);
+  border-radius: 1.5rem;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.15);
+  backdrop-filter: blur(8px);
+  margin-bottom: 2rem;
+  width: 100%;
+  max-width: 1600px;
+  padding: 4rem 1.5rem;
 }
 
 .alt-bg {
@@ -172,22 +192,104 @@ a:hover {
 /* Projects */
 .projects-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
   gap: 2rem;
   margin-top: 2rem;
+  max-width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
+/* Inline Education and Certifications */
+.inline-sections {
+  display: flex;
+  gap: 2rem;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+}
+@media (max-width: 900px) {
+  .inline-sections {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+}
+
+/* Spinning Skills Marquee */
+.skills-marquee {
+  width: 100%;
+  overflow: hidden;
+  margin: 2rem 0 1rem 0;
+  position: relative;
+}
+.skills-track {
+  display: flex;
+  gap: 2.5rem;
+  animation: spin-horizontal 18s linear infinite;
+}
+.skill-spin-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #fff;
+  border-radius: 50%;
+  box-shadow: 0 2px 12px rgba(255, 102, 0, 0.15);
+  padding: 1.1rem 1.1rem 0.5rem 1.1rem;
+  min-width: 100px;
+  min-height: 100px;
+  transition: transform 0.3s, box-shadow 0.3s;
+  cursor: pointer;
+}
+.skill-spin-card:hover {
+  animation-play-state: paused !important;
+  transform: scale(1.12);
+  box-shadow: 0 4px 24px #ff6600;
+}
+.skill-spin-icon {
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: #fff;
+  margin-bottom: 0.5rem;
+  overflow: hidden;
+}
+.skill-spin-icon img {
+  width: 44px;
+  height: 44px;
+  object-fit: contain;
+  border-radius: 50%;
+  background: #fff;
+}
+@keyframes spin-horizontal {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+/* Project Card Text Color Update */
 .project-card {
-  background-color: white;
+  background-color: #181818;
+  color: #e0e0e0;
   padding: 1.5rem;
   border-radius: 0.75rem;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
   transition: transform 0.3s;
 }
-
-.project-card:hover {
-  transform: translateY(-4px);
-  background-color: #f9fafb;
+.project-card h3 {
+  color: #ff6600;
+}
+.project-card p, .project-card strong, .project-card a {
+  color: #e0e0e0;
+}
+.project-card a.cta-button {
+  color: #fff;
+  background: linear-gradient(90deg, #ff6600 60%, #111 100%);
+  box-shadow: 0 2px 12px #ff6600;
+}
+.project-card a.cta-button:hover {
+  background: linear-gradient(90deg, #111 60%, #ff6600 100%);
 }
 
 /* Certifications */
@@ -227,7 +329,7 @@ a:hover {
   position: fixed;
   bottom: 30px;
   right: 30px;
-  background-color: #2563eb;
+  background-color: #ff6600;
   color: white;
   padding: 0.6rem 1rem;
   border-radius: 30px;
@@ -241,7 +343,7 @@ a:hover {
 }
 
 #backToTop:hover {
-  background-color: #1e40af;
+  background-color: #ffa040;
 }
 
 /* Animations */
@@ -253,4 +355,15 @@ a:hover {
 @keyframes slideUp {
   0% { transform: translateY(20px); opacity: 0; }
   100% { transform: translateY(0); opacity: 1; }
+}
+
+/* Fade-in/Fade-out for sections */
+.fade-section {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.7s cubic-bezier(.77,0,.18,1), transform 0.7s cubic-bezier(.77,0,.18,1);
+}
+.fade-section.fade-in {
+  opacity: 1;
+  transform: translateY(0);
 }
