@@ -9,16 +9,7 @@ const Projects = () => {
 
   <div className="projects-grid">
 
-    <div className="project-card">
-      <h3>Find Your Spot</h3>
-      <p>
-        Full-stack web platform for discovering campus study locations. I built a RESTful Django backend with complete CRUD functionality and developed a dynamic React frontend with real-time filtering.
-      </p>
-      <p><strong>Tech:</strong> Django, React, PostgreSQL, CSS</p>
-      <p>
-        <strong>GitHub:</strong> <a href="https://github.com/karungop/find-your-spot" target="_blank" rel="noopener noreferrer" className="cta-button">View Repository</a>
-      </p>
-    </div>
+    
 
     <div className="project-card">
       <h3>Rate My Professor Sentiment Analysis</h3>
@@ -27,18 +18,18 @@ const Projects = () => {
       </p>
       <p><strong>Tech:</strong> Python, Transformers, PyTorch, Pandas</p>
       <p>
-        <strong>GitHub:</strong> <a href="https://github.com/karungop/rate-my-professor" target="_blank" rel="noopener noreferrer" className="cta-button">View Repository</a>
+        <strong>GitHub:</strong> <a href="https://github.com/karungop/RateMyProfessorModel" target="_blank" rel="noopener noreferrer" className="cta-button">View Repository</a>
       </p>
     </div>
 
     <div className="project-card">
-      <h3>Advisor AI</h3>
+      <h3>HandTyped</h3>
       <p>
-        Built a chatbot tool that simulates academic advising conversations using the OpenAI API. I implemented secure file upload in Flask and crafted the user interface using React.
+        A gesture-powered desktop typing tool that lets users simulate keypresses using hand signs. Designed as an accessibility and productivity experiment, the app uses a webcam to track hand gestures and maps them to keyboard inputs in real time.
       </p>
-      <p><strong>Tech:</strong> React, Flask, OpenAI API, CSS</p>
+      <p><strong>Tech:</strong> Electron, React, RobotJS, MediaPipe</p>
       <p>
-        <strong>GitHub:</strong> <a href="https://github.com/karungop/advisor-ai" target="_blank" rel="noopener noreferrer" className="cta-button">View Repository</a>
+        <strong>GitHub:</strong> <a href="https://github.com/karungop/handtyped-electron" target="_blank" rel="noopener noreferrer" className="cta-button">View Repository</a>
       </p>
     </div>
 
@@ -49,9 +40,33 @@ const Projects = () => {
       </p>
       <p><strong>Tech:</strong> Django, Beautiful Soup, OpenAI API, Python</p>
       <p>
-        <strong>GitHub:</strong> <a href="https://github.com/karungop/bookworm" target="_blank" rel="noopener noreferrer" className="cta-button">View Repository</a>
+        <strong>GitHub:</strong> <a href="https://github.com/vihaaaaan/BookWorm" target="_blank" rel="noopener noreferrer" className="cta-button">View Repository</a>
       </p>
     </div>
+
+    <div className="project-card">
+      <h3>Find Your Spot</h3>
+      <p>
+        Full-stack web platform for discovering campus study locations. I built a RESTful Django backend with complete CRUD functionality and developed a dynamic React frontend with real-time filtering.
+      </p>
+      <p><strong>Tech:</strong> Django, React, PostgreSQL, CSS</p>
+      <p>
+        <strong>GitHub:</strong> <a href="https://github.com/karungop/FindYourSpot" target="_blank" rel="noopener noreferrer" className="cta-button">View Repository</a>
+      </p>
+    </div>
+
+    <div className="project-card">
+      <h3>Advisor AI</h3>
+      <p>
+        Built a chatbot tool that simulates academic advising conversations using the OpenAI API. I implemented secure file upload in Flask and crafted the user interface using React.
+      </p>
+      <p><strong>Tech:</strong> React, Flask, OpenAI API, CSS</p>
+      <p>
+        <strong>GitHub:</strong> <a href="https://github.com/karungop/HackOhio2024" target="_blank" rel="noopener noreferrer" className="cta-button">View Repository</a>
+      </p>
+    </div>
+
+    
 
     <div className="project-card">
       <h3>Homepage</h3>
@@ -60,9 +75,11 @@ const Projects = () => {
       </p>
       <p><strong>Tech:</strong> React, HTML, CSS</p>
       <p>
-        <strong>GitHub:</strong> <a href="https://github.com/karungop/personal-homepage" target="_blank" rel="noopener noreferrer" className="cta-button">View Repository</a>
+        <strong>GitHub:</strong> <a href="https://github.com/karungop/KarunGopal" target="_blank" rel="noopener noreferrer" className="cta-button">View Repository</a>
       </p>
     </div>
+
+    
 
   </div>
 </section>

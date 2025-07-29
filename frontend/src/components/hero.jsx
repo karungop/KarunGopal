@@ -53,7 +53,7 @@ const Hero = () => {
         </p>
         <div style={{ display: 'flex', gap: '1.2rem', flexWrap: 'wrap', justifyContent: 'center' }}>
           <a
-            href="/KarunGopalResume.pdf"
+            href="https://drive.google.com/file/d/1d6oDHItwV9jxTjF-zT1dYY_MbEaApiQK/view?usp=drive_link"
             className="cta-button"
             style={{
               background: 'linear-gradient(90deg, #ff6600 60%, #111 100%)',
