@@ -29,7 +29,7 @@ const Projects = () => {
       </p>
       <p><strong>Tech:</strong> Electron, React, RobotJS, MediaPipe</p>
       <p>
-        <strong>GitHub:</strong> <a href="https://github.com/karungop/handtyped-electron" target="_blank" rel="noopener noreferrer" className="cta-button">View Repository</a>
+        <strong>GitHub:</strong> <a href="https://github.com/karungop/HandTyped/tree/main/handtyped-electron" target="_blank" rel="noopener noreferrer" className="cta-button">View Repository</a>
       </p>
     </div>
 
