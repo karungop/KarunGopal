@@ -2,6 +2,7 @@
 import React, { useEffect } from 'react';
 import Navbar from './components/navbar';
 import Hero from './components/hero';
+import About from './components/about';
 import Skills from './components/skills';
 import Projects from './components/projects';
 import Experience from './components/experiences';
@@ -31,21 +32,18 @@ function App() {
   }, []);
 
   return (
-    <div className="font-sans text-gray-900 bg-gradient-to-br from-gray-700 to-black min-h-screen">
+    <div className="portfolio-container apple-theme">
       <Navbar />
-      <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', width: '100%' }}>
-        <div style={{ width: '95%', maxWidth: 1600, margin: '0 auto', display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
-          <div className="fade-section"><Hero /></div>
-          <div className="fade-section"><Skills /></div>
-          <div className="fade-section"><Projects /></div>
-          <div className="fade-section"><Experience /></div>
-          <div className="fade-section inline-sections">
-            <Education />
-            <Certifications />
-          </div>
-          <div className="fade-section"><Contact /></div>
-        </div>
+      <div className="fade-section"><Hero /></div>
+      <div className="fade-section"><About /></div>
+      <div className="fade-section"><Skills /></div>
+      <div className="fade-section"><Projects /></div>
+      <div className="fade-section"><Experience /></div>
+      <div className="fade-section inline-sections">
+        <Education />
+        <Certifications />
       </div>
+      <div className="fade-section"><Contact /></div>
       <BackToTop/>
     </div>
   );
