@@ -44,7 +44,20 @@ const Projects = () => {
       description: "Created a Chrome extension that generates continuous math problems based on user-defined difficulty ranges and a custom timer. Designed to help users practice quick arithmetic directly from their browser toolbar.",
       technologies: ["TypeScript", "Chrome Extensions API", "HTML", "CSS"],
       link: "github.com/karungop/z-math"
+    },
+    {
+      name: "Mac Clipboard Manager",
+      description: "Developed a macOS clipboard manager that stores the last 10 copied items and includes 3 constant clipboard slots for quick access. Integrated system-wide clipboard monitoring and paste simulation using Carbon and Accessibility APIs.",
+      technologies: ["Swift", "AppKit", "Xcode", "macOS Accessibility APIs"],
+      link: "github.com/karungop/Apple-Clipboard"
+    },
+    {
+      name: "For the People",
+      description: "Built a personalized web platform that makes government legislation transparent by providing tailored updates on recent Congressional bills based on user demographics, interests, and location. Integrated a RAG-powered chatbot to explain complex legal text in plain English using persistent context for each user. Developed custom Flask API endpoints to communicate with the frontend and process data from Congress.gov APIs, while leveraging Firebase authentication, Firestore database, and Groq-powered LLM requests for scalability and accuracy.",
+      technologies: ["Next.js", "React", "Flask", "Python", "Groq", "Beautiful Soup", "Firebase", "Firestore", "Congress.gov API"],
+      link: "github.com/karungop/HackIO-2025"
     }
+
   ];
 
   return (
