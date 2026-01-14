@@ -6,7 +6,7 @@ const BackToTop = () => {
   useEffect(() => {
     const handleScroll = () => {
       const btn = document.getElementById('backToTop');
-      if (window.scrollY > 300) {
+      if (window.scrollY > 50) {
         btn.style.display = 'block';
       } else {
         btn.style.display = 'none';

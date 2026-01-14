@@ -2,7 +2,7 @@ import React from 'react';
 import "../styles/main.css";
 
 const Certifications = () => (
-  <section className="about">
+  <section id="certifications" className="about">
     <div className="section-content">
       <h3 className="section-title">Certifications & Courses</h3>
       <div className="about-text">

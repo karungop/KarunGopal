@@ -10,7 +10,7 @@ const Skills = () => {
   };
 
   return (
-    <section className="skills">
+    <section id="skills" className="skills">
       <div className="section-content">
         <h3 className="section-title">Skills</h3>
         <div className="skills-grid">

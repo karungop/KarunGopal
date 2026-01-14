@@ -61,7 +61,7 @@ const Projects = () => {
   ];
 
   return (
-    <section className="projects">
+    <section id="projects" className="projects">
       <div className="section-content">
         <h3 className="section-title">Projects</h3>
         <div className="projects-grid">

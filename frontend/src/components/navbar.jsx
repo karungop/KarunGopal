@@ -14,7 +14,7 @@ const Navbar = () => {
     { label: "Home", id: "hero" },
     { label: "Skills", id: "skills" },
     { label: "Projects", id: "projects" },
-    { label: "Experience", id: "work experience" },
+    { label: "Experience", id: "experience" },
     { label: "Education", id: "education" },
     { label: "Certifications", id: "certifications" },
     { label: "Contact", id: "contact" },

@@ -386,6 +386,57 @@
   box-shadow: 0 8px 20px rgba(0, 122, 255, 0.3);
 }
 
+/* Contact section styling */
+.center-text {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+.center-text h2 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin: 0 0 24px 0;
+  color: #1d1d1f;
+  letter-spacing: -0.02em;
+}
+
+.center-text p {
+  font-size: 1.1rem;
+  color: #515154;
+  margin: 0 0 40px 0;
+  line-height: 1.7;
+  font-weight: 300;
+}
+
+.contact-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: center;
+}
+
+.contact-list li {
+  font-size: 1.1rem;
+  color: #1d1d1f;
+  font-weight: 400;
+}
+
+.contact-list a {
+  color: #007aff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.contact-list a:hover {
+  color: #0056b3;
+}
+
 /* Common styles for both themes */
 .hero-content {
   max-width: 600px;
@@ -491,6 +542,44 @@
 .fade-section.fade-in {
   opacity: 1;
   transform: translateY(0);
+}
+
+/* Back to Top Button */
+#backToTop {
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  background-color: #007aff;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 30px;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 0.95rem;
+  box-shadow: 0 4px 12px rgba(0, 122, 255, 0.3);
+  transition: all 0.3s ease;
+  z-index: 999;
+  display: none;
+  user-select: none;
+}
+
+#backToTop:hover {
+  background-color: #0056b3;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 16px rgba(0, 122, 255, 0.4);
+}
+
+#backToTop:active {
+  transform: translateY(-1px);
+}
+
+@media (max-width: 768px) {
+  #backToTop {
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 16px;
+    font-size: 0.85rem;
+  }
 }
 
 
