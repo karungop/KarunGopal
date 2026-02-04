@@ -9,6 +9,7 @@ import Experience from './components/experiences';
 import Education from './components/education';
 import Certifications from './components/certifications';
 import Contact from './components/contact';
+import Resume from './components/resume';
 import BackToTop from './components/backToTop';
 import "./styles/main.css";
 
@@ -44,6 +45,7 @@ function App() {
         <Certifications />
       </div>
       <div className="fade-section"><Contact /></div>
+      <div className="fade-section"><Resume /></div>
       <BackToTop/>
     </div>
   );

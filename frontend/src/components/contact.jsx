@@ -12,6 +12,7 @@ const Contact = () => (
     <li>Email: <a href="mailto:karun.gopal@gmail.com">karun.gopal@gmail.com</a></li>
     <li>LinkedIn: <a href="https://linkedin.com/in/karun-gopal" target="_blank" rel="noopener noreferrer">karun-gopal</a></li>
     <li>GitHub: <a href="https://github.com/karungop" target="_blank" rel="noopener noreferrer">karungop</a></li>
+    <li>Resume: <a href="https://drive.google.com/file/d/16Sbv2asayEVKXpmWuUbYbIq3Vzj3pckS/view?usp=sharing" target="_blank" rel="noopener noreferrer">Download PDF</a></li>
   </ul>
 </section>
   );
