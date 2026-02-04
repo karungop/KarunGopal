@@ -4,6 +4,16 @@ import "../styles/main.css";
 const Experiences = () => {
   const experience = [
     {
+      title: "Operating Systems Teaching Assistant",
+      company: "Ohio State University",
+      location: "Columbus, OH",
+      period: "February 2026 – Present",
+      achievements: [
+        "Conducted weekly office hours to support students in an undergraduate Operating Systems course, addressing questions on process management, synchronization primitives, CPU scheduling algorithms, and memory management techniques.",
+        "Maintained a 1-day average response time to student email inquiries, providing detailed clarifications on course concepts and assignment requirements to enhance understanding and performance."
+      ]
+    },
+    {
       title: "Software Engineering Intern",
       company: "Principal Financial Group",
       location: "Des Moines, IA",
