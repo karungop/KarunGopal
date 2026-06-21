@@ -1,10 +1,9 @@
 import React from 'react';
 
 const SKILL_ROWS = [
-  { category: 'Languages', skills: ['Python', 'Java', 'JavaScript', 'C', 'C++', 'SQL'] },
-  { category: 'Frontend',  skills: ['React', 'HTML5', 'CSS3', 'TypeScript'] },
-  { category: 'Backend',   skills: ['Django', 'Flask', 'Node.js', 'REST APIs'] },
-  { category: 'Tools',     skills: ['Git', 'AWS', 'Docker', 'Beautiful Soup', 'OpenAI API'] },
+  { category: 'Languages',   skills: ['Python', 'Java', 'TypeScript', 'JavaScript', 'Swift', 'C', 'C++', 'SQL', 'MATLAB'] },
+  { category: 'Frameworks',  skills: ['React', 'Next.js', 'Django', 'Flask', 'Spring Boot'] },
+  { category: 'Tools',       skills: ['Git', 'AWS', 'Firebase', 'GitHub Actions', 'Beautiful Soup', 'OpenAI API'] },
 ];
 
 export default function Skills() {

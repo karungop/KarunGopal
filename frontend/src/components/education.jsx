@@ -12,11 +12,11 @@ export default function Education() {
         <div>
           <p className="cred-block-label">Education</p>
           <p className="edu-institution">The Ohio State University</p>
-          <p className="edu-degree">B.S. Computer Science &amp; Mathematics</p>
+          <p className="edu-degree">B.S. Computer Science &amp; Engineering, Financial Mathematics</p>
           <p className="edu-period">2023–2027</p>
           <p className="edu-meta">GPA: 3.76</p>
           <p className="edu-courses">
-            Data Structures and Algorithms · Software Engineering · AI · Linear Algebra · Probability · OOP · Operating Systems
+            Data Structures and Algorithms · Operating Systems · Statistics · Networking · Databases
           </p>
         </div>
 

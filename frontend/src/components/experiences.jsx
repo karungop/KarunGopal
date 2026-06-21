@@ -2,6 +2,19 @@ import React from 'react';
 
 const EXPERIENCE = [
   {
+    title: "Software Developer Engineer Intern",
+    company: "IBM",
+    location: "Poughkeepsie, NY",
+    period: "May 2026 – Aug 2026",
+    year: "2026",
+    current: false,
+    achievements: [
+      "Implemented a workflow expansion for the Z Secure z/OS mainframe team using Python, TypeScript, and React Carbon, delivering all core features 6 weeks ahead of schedule.",
+      "Engineered an ML explainability module for anomaly detection tool in Python, decoding normalized transformations into one-hot encoded vector matrices to map gradient-based feature importance for a Forwardfeed Neural Network.",
+      "Designed a concurrent architecture by evaluating implementation trade-offs, deploying a robust file-locking mechanism that mitigated data corruption risks across interdependent system processes.",
+    ],
+  },
+  {
     title: "Operating Systems Teaching Assistant",
     company: "Ohio State University",
     location: "Columbus, OH",
@@ -9,8 +22,8 @@ const EXPERIENCE = [
     year: "2026",
     current: true,
     achievements: [
-      "Conducted weekly office hours to support students in an undergraduate Operating Systems course, addressing questions on process management, synchronization primitives, CPU scheduling algorithms, and memory management techniques.",
-      "Maintained a 1-day average response time to student email inquiries, providing detailed clarifications on course concepts and assignment requirements to enhance understanding and performance.",
+      "Support students in an undergraduate Operating Systems course by holding weekly office hours focused on processes, synchronization, scheduling, and memory management.",
+      "Respond to student email inquiries within 1 day on average, clarifying course concepts and assignment expectations.",
     ],
   },
   {
@@ -21,7 +34,7 @@ const EXPERIENCE = [
     year: "2025",
     current: false,
     achievements: [
-      "Delivered production features across monolithic and microservice systems by implementing backend and frontend components in Java, TypeScript, Spring Boot, React, and Dust which increased total story points completed by 15%.",
+      "Delivered features and tests across monolithic and microservice systems hosted on AWS written in Java, TypeScript, Spring Boot, React, and Dust which increased total story points completed by 15%.",
       "Automated 4 separate API requests into a single ServiceNow workflow by building a consolidated ticket creation endpoint which reduced operational steps by 4 and lowered manual processing time by as much as 2 days.",
       "Led a two week Agile sprint by coordinating standups, backlog grooming, and sprint reviews which resulted in completing 110% of planned story points.",
     ],
