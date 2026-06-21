@@ -1,21 +1,41 @@
-// src/components/Contact.jsx
-import "../styles/main.css";
+import React from 'react';
 
-const Contact = () => (
-    <section id="contact" className="section">
-  <h2 className="center-text">Get In Touch</h2>
-  <p className="center-text">
-    Whether you're a recruiter, engineer, or fellow student, I’d love to connect.<br />
-    Feel free to send me a message or explore my GitHub to see what I’ve been building.
-  </p>
-  <ul className="contact-list">
-    <li>Email: <a href="mailto:karun.gopal@gmail.com">karun.gopal@gmail.com</a></li>
-    <li>LinkedIn: <a href="https://linkedin.com/in/karun-gopal" target="_blank" rel="noopener noreferrer">karun-gopal</a></li>
-    <li>GitHub: <a href="https://github.com/karungop" target="_blank" rel="noopener noreferrer">karungop</a></li>
-    <li>Resume: <a href="https://drive.google.com/file/d/16Sbv2asayEVKXpmWuUbYbIq3Vzj3pckS/view?usp=sharing" target="_blank" rel="noopener noreferrer">Download PDF</a></li>
-  </ul>
-</section>
+export default function Contact() {
+  return (
+    <section id="contact" className="contact" style={{ padding: '0 var(--page-margin)', paddingBottom: '5rem', paddingTop: 'var(--section-gap)' }}>
+      <div className="section-header">
+        <span className="section-numeral">06</span>
+        <span className="section-label">Contact</span>
+      </div>
+      <div className="contact-links">
+        <a href="mailto:karun.gopal@gmail.com" className="contact-link">
+          karun.gopal@gmail.com
+        </a>
+        <a
+          href="https://linkedin.com/in/karun-gopal"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="contact-link"
+        >
+          linkedin.com/in/karun-gopal <span className="arrow">↗</span>
+        </a>
+        <a
+          href="https://github.com/karungop"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="contact-link"
+        >
+          github.com/karungop <span className="arrow">↗</span>
+        </a>
+        <a
+          href="https://drive.google.com/file/d/16Sbv2asayEVKXpmWuUbYbIq3Vzj3pckS/view?usp=sharing"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="contact-link"
+        >
+          Resume <span className="arrow">↗</span>
+        </a>
+      </div>
+    </section>
   );
-  
-  export default Contact;
-  
+}

@@ -1,0 +1,28 @@
+:root {
+  --black:    #000000;
+  --white:    #ffffff;
+  --gray-50:  #f8f8f8;
+  --gray-200: #e0e0e0;
+  --gray-400: #999999;
+  --gray-600: #555555;
+
+  --font-display: "Cormorant Garamond", Georgia, serif;
+  --font-body:    "DM Sans", system-ui, -apple-system, sans-serif;
+
+  --text-xs:   0.75rem;
+  --text-sm:   0.875rem;
+  --text-base: 1rem;
+  --text-lg:   1.125rem;
+  --text-xl:   1.375rem;
+  --text-2xl:  1.75rem;
+  --text-3xl:  2.5rem;
+  --text-hero: clamp(4rem, 10vw, 8rem);
+
+  --section-gap:  clamp(5rem, 10vw, 8rem);
+  --page-margin:  clamp(2rem, 5vw, 5rem);
+  --nav-width:    180px;
+  --content-max:  1100px;
+
+  --transition-fast:   150ms ease;
+  --transition-medium: 300ms ease;
+}

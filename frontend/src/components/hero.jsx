@@ -1,26 +1,19 @@
 import React from 'react';
-import "../styles/main.css"; // ensure this import is present
 
-const Hero = () => {
+export default function Hero() {
   return (
-    <section className="section center-text fade-section" id="hero">
-      <div className="hero-container">
-        {/* <img
-          src={headshot}
-          alt="Karun Gopal headshot"
-          className="hero-headshot"
-        /> */}
-        <p></p>
-
-        <h1 className="hero-title">Hi, I'm Karun Gopal</h1>
-        <h2 className="hero-subtitle">Software Engineer</h2>
-
+    <section className="hero" id="hero">
+      <div className="hero-left">
+        <h1 className="hero-name">Karun<br />Gopal</h1>
+        <div className="hero-divider" />
+        <span className="hero-year">Est. 2003</span>
+      </div>
+      <div className="hero-right">
+        <p className="hero-title">Software Engineer</p>
         <p className="hero-description">
           Passionate about building scalable, impactful software. Experienced in full-stack development, cloud, and modern web technologies. Eager to solve real-world problems and drive innovation.
         </p>
       </div>
     </section>
   );
-};
-
-export default Hero;
+}

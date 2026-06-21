@@ -1,0 +1,40 @@
+.contact {
+  min-height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  border-top: 1px solid var(--gray-200);
+  padding-bottom: 5rem;
+  max-width: none;
+}
+
+.contact-links {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  margin-top: 2rem;
+}
+
+.contact-link {
+  font-family: var(--font-body);
+  font-size: clamp(1.1rem, 2.5vw, 1.75rem);
+  font-weight: 300;
+  color: var(--black);
+  text-decoration: none;
+  line-height: 1.4;
+  transition: opacity var(--transition-fast);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.contact-link:hover {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  text-decoration-thickness: 1px;
+}
+
+.contact-link .arrow {
+  font-size: 0.8em;
+  opacity: 0.5;
+}
