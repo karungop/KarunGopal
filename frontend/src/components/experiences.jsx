@@ -20,7 +20,7 @@ const EXPERIENCE = [
     location: "Columbus, OH",
     period: "February 2026 – Present",
     year: "2026",
-    current: true,
+    current: false,
     achievements: [
       "Support students in an undergraduate Operating Systems course by holding weekly office hours focused on processes, synchronization, scheduling, and memory management.",
       "Respond to student email inquiries within 1 day on average, clarifying course concepts and assignment expectations.",
