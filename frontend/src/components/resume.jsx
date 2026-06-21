@@ -9,7 +9,7 @@ const Resume = () => (
     </p>
     <div style={{ marginTop: '32px' }}>
       <a
-        href="https://drive.google.com/file/d/16Sbv2asayEVKXpmWuUbYbIq3Vzj3pckS/view?usp=sharing"
+        href="https://drive.google.com/file/d/1vNOciCF2M8ARWAEmM6Q4haMWgwYZn-ut/view?usp=sharing"
         target="_blank"
         rel="noopener noreferrer"
         className="cta-button neutral"
