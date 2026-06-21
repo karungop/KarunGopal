@@ -6,7 +6,7 @@ export default function Hero() {
       <div className="hero-left">
         <h1 className="hero-name">Karun<br />Gopal</h1>
         <div className="hero-divider" />
-        <span className="hero-year">Est. 2003</span>
+        <span className="hero-year">Est. 2004</span>
       </div>
       <div className="hero-right">
         <p className="hero-title">Software Engineer</p>
